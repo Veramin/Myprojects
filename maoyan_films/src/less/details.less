@@ -1,0 +1,241 @@
+main{
+    margin-bottom: 80px;
+    .bg-box{
+        width: 100%;
+        height: 375px;
+        background: url('../images/details/banner_bg.png') no-repeat;
+        margin-bottom: 80px;
+        .content-box{
+            position: relative;
+            color: #fff;
+            font-size: 14px;
+
+            .content{
+                position: absolute;
+                left: 0;
+                top: 75px;
+                .img-box{
+                    width: 235px;
+                    border: 4px solid #fff;
+                    margin-right: 30px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .film-infos{
+                    margin-right: 90px;
+                    .chinese-name{
+                        font-weight: bold;
+                        font-size: 26px;
+                    }
+                    .native-name{
+                        font-weight: normal;
+                        font-size: 18px;
+                    }
+                    .type{
+                        margin: 10px 0 8px 0;
+                    }
+                    .country-timeDuration,.time{
+                        margin-bottom: 5px;
+                    }
+                    .want-to-see{
+                        span{
+                            display: inline-block;
+                            width: 120px;
+                            height: 35px;
+                            line-height: 35px;
+                            text-align: center;
+                            margin: 55px 8px 10px 0;
+                            background-color: #756189;
+                            border-radius: 3px;
+                            cursor: pointer;
+
+                            i{
+                                display: inline-block;
+                                width: 16px;
+                                height: 16px;
+                                vertical-align: middle;
+                                margin-right: 5px;
+                            }
+
+                            .heart {
+                                background: url('../images/details/heart.png') no-repeat;    
+                            }
+
+                            .start {
+                                background: url('../images/details/start.png') no-repeat;
+                            }
+
+                            
+                        }
+                    }
+
+                    .buy-btn{
+                        display: block;
+                        width: 253px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        letter-spacing: 3px;
+                        // cursor: pointer;
+                        background: #EF4238;
+                        border-radius: 3px;
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                }
+
+                .others{
+                    margin-top: 150px;
+                    section{
+                        span{
+                            display: block;
+                            margin-bottom: 8px;
+                        }
+                        strong{
+                            font-size: 26px;
+                            font-weight: 500;
+                        }
+                        .score-num{
+                            color: #FFC619;
+                        }
+                        .yi{
+                            display: inline-block;
+                            margin-left: 5px;
+                        }
+                    }
+                    .ticket{
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    .introduction{
+        
+        // 菜单
+        .tab-menu{
+            margin-bottom: 40px;
+            border-bottom: 2px solid #eee;
+            li{
+                float: left;
+                margin-right: 30px;
+                padding-bottom: 10px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+            .selected{
+                color: #EF4238;
+                position: relative;
+                
+            }
+            .triangle::after{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                background: #EF4238;
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+            }
+        }
+        // tab内容
+        .content-item{
+            display: none;
+            color: #333;
+            font-size: 14px;
+
+            // 介绍
+            .story{
+                text-indent: 2em;
+                line-height: 25px;
+            }
+            // 演职人员
+            .performers{
+                section{
+                    color: #333;
+
+                    .dir,.act{
+                        display: inline-block;
+                        font-size: 18px;
+                        border-left: 4px solid #EF4238;
+                        padding-left: 5px;
+                    }
+                    .director-num,.actor-num{
+                        display: inline-block;
+                        margin-left: 10px;
+                        font-size: 14px;
+                        color: #999;
+                    }
+                    ul{
+                        li{
+                            width: 130px;
+                            height: 170px;
+                            margin: 20px 20px 0 0;
+                            font-size: 16px;
+
+                            
+
+                            img{
+                                width: 100%;
+                                margin-bottom: 15px;
+                            }
+
+                            .play-name{
+                                margin-top: 5px;
+                                color: #666;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+
+                .director{
+                    margin-bottom: 80px;
+                }
+            }
+
+            // 奖项
+            .prize{
+                li{
+                    padding: 20px 0 25px 0;
+                    border-bottom: 1px dashed #ccc;
+
+                    section{
+                        img{
+                            border-radius: 50%;
+                            width: 50px;
+                            margin: 0 30px 30px 0;
+                        }
+    
+                        .title{
+                            // display: block;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .details{
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            // 图集
+            .atlas{
+                img{
+                    width: 105px;
+                    height: 105px;
+                    margin: 0 25px 25px 0;      
+                }
+            }
+        }
+        .content-item.show{
+            display: block;
+        }
+    }
+}

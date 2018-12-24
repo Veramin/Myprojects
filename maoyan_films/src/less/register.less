@@ -1,0 +1,183 @@
+@fontColorRed: #EF4238;
+
+// 头部logo
+header{
+    width: 100%;
+    border-bottom: 2px solid @fontColorRed;
+    .site-logo{
+        display: block;
+        width: 980px;
+        height: 40px;
+        padding: 10px 0;
+        margin: 0 auto;
+        span{
+            width: 133px;
+            height: 40px;
+            background-position: -536px -748px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// 表单
+main{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+   .content{
+        width: 980px;
+        margin: 0 auto;
+        .my-form{
+            margin-top: 40px;
+            color: #333;
+
+            // 输入框
+            section{
+                label{
+                    display: inline-block;
+                    width: 100px;
+                    text-align: right;
+                    font-size: 14px;
+                    letter-spacing: 3px;
+                    margin-right: 10px;
+                }
+                input{
+                    padding-left: 8px;
+                }
+
+                &:nth-child(2) input{
+                    margin-bottom: 0;
+                }
+            }
+
+            // 表单验证提示
+            .username::after{
+                content: "注册成功后，全美团通用";
+                color: #999;
+                font-size: 12px;
+                margin-left: 10px;
+            }
+            .tips::after{
+                content: attr(data-tips);
+                color: #999;
+                font-size: 12px;
+            }
+
+            .tips-status{
+                display: inline-block;
+                height: 17px;
+                background: url('../images/login/verification.png');
+                vertical-align: middle;
+                margin: 0 5px;
+            }
+
+            .tips-error{
+                width: 17px;
+                background-position: 0 -296px;
+            }
+            .tips-success{
+                width: 17px;
+                background-position: 0 -453px;
+            }
+
+            // 密码强度
+            .pass_set{
+                margin: 8px 0 8px 110px;
+                position: relative;
+                
+                li{
+                    float: left;
+                    width: 85px;
+                    height: 20px;
+                    line-height: 20px;
+                    margin-right: 1px;
+                    color: #fff;
+                    background: #eee;
+                    font-size: 12px;
+                    text-align: center; 
+                }
+
+                .pw-strength{
+                    display: block;
+                    width: 0;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 12px;
+                    opacity: 0;
+                    color: #fff;
+                    text-align: center;
+                    transition: all .4s linear;
+                    position: absolute;
+                    top: 0;
+                }
+
+                
+
+                .strength_L{
+                    opacity: 1;
+                    width: 85px;
+                    background: #f76120;
+                    left: 0;
+                    
+                }
+
+                .pre_L{
+                    opacity: 1;
+                    width: 85px;
+                    background: #ff8900;
+                    left: 0;
+                }
+                .pre_LL{
+                    opacity: 1;
+                    width: 85px;
+                    background: #5bab3c;
+                    left: 0;
+                }
+
+                .strength_M{
+                    opacity: 1;
+                    width: 85px;
+                    background: #ff8900;
+                    left: 86px;
+                }
+
+                .pre_M{
+                    opacity: 1;
+                    width: 85px;
+                    background: #5bab3c;
+                    left: 86px;
+                }
+
+                .strength_H{
+                    opacity: 1;
+                    width: 85px;
+                    background: #5bab3c;
+                    left: 172px;
+                }
+
+            }
+
+            // 注册按钮
+            .register-btn{
+                width: 180px;
+                margin-left: 110px;
+            }
+
+            // 协议
+            .protocol{
+                display: block;
+                margin-left: 110px;
+                font-size: 14px;
+                color: @fontColorRed;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+   }
+}
+
+footer{
+    padding-top: 20px;
+}

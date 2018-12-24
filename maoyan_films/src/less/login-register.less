@@ -1,0 +1,47 @@
+@fontColorRed: #EF4238;
+// 头部
+header{
+    .site-logo{
+        position: relative;
+        span{
+            display: block;
+            background-image: url('../images/common/sp-normal.png');
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+input{
+    width: 270px;
+    height: 35px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+
+    &:focus{
+        border: 1px solid @fontColorRed; 
+    }
+}
+
+button{
+    height: 35px;
+    background: @fontColorRed;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+
+footer{
+    // 版权
+    .copyright{
+        color: #999;
+        text-align: center;
+        font-size: 12px;
+    }
+}

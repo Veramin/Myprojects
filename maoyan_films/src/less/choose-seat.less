@@ -1,0 +1,99 @@
+// 影院
+.c-bg-box{
+    height: 320px !important;
+    .c-img-box{
+        width: 290px !important;
+        height: 290px;    
+    }
+
+    section{
+        .name{
+            font-weight: normal !important;
+        }
+        .address{
+            margin: 5px 0;
+        }
+    }
+}
+
+
+
+
+
+
+.cinemas-field{
+    width: 100%;
+    display: table;
+    margin-top: 40px;
+    // font-size: 14px;
+    font-weight: 200;
+    border-collapse: collapse;
+}
+.cinemas-field .thead{
+    width: 100%;
+    height: 55px !important;
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    display: table-header-group;
+    background: #f9f9f9;
+} 
+.thead .td{
+    height: 55px !important;
+}
+.cinemas-field .tbody{
+    width: 100%;
+    display: table-row-group;
+}
+.tbody .tr{
+    width: 100%;
+    height: 80px;
+    display: table-row;
+}
+.tbody .tr:nth-child(2n+1){
+    background: #fff;
+}
+.tbody .tr:nth-child(2n){
+    background: #f9f9f9;
+}
+.thead .td,.tbody .td{
+    display: table-cell;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    color: #333;
+}
+.startTime,.price{
+    font-weight: bold;
+    font-size: 18px !important;
+}
+.startTime{
+    position: relative;
+}
+.endTime{
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+}
+.price{
+    
+    color: #f03d37 !important;
+}
+
+.meiyuanfu{
+    font-size: 12px;
+}
+.choose-seat-btn{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #f03d37;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 100px;
+}

@@ -1,0 +1,185 @@
+@redColor: #EF4238;
+
+// 进度条
+.progress-bar{
+    width: 980px;
+    height: 140px;
+    margin: 0 auto;
+    text-align: center;
+
+    
+    span{
+        display: inline-block;
+        float: left;
+        font-size: 14px;
+        color: #A5A5A5;
+        margin-right: 223px;
+        padding-top: 70px;
+        position: relative;
+
+        span.step{
+            display: inline-block;
+            font-size: 10px;
+            width: 15px;
+            height: 15px;
+            padding-top: 0;
+            border-radius: 50%;
+            background: #FFD8D7;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .maked{
+            background: @redColor !important;
+        }
+        .one-maked::before,.two-maked::before{
+            background: @redColor;
+            display: block;
+            content: "";
+            width: 297px;
+            height: 4px;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9;
+        }
+        .three-maked::before{
+            background: @redColor;
+            display: block;
+            content: "";
+            width: 148px;
+            height: 4px;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9;
+        }
+        .step-one::after,.step-two::after,.step-three::after{
+            display: block;
+            content: "";
+            width: 297px;
+            height: 4px;
+            background: #FFD8D7;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .p-maked{
+        color:@redColor !important;
+    }
+    span:last-child{
+        margin-right: 0;
+    }
+    
+} 
+main{
+    margin: 80px auto !important;
+    // 倒计时
+    .count-down{
+        background: #FFF3F3;
+        padding: 30px;
+        margin-bottom: 40px;
+        .pay-icon{
+            width: 35px;
+            margin: 10px 15px 0 0;
+            vertical-align: middle;
+        }
+        .count-down-tips{
+            display: inline-block;
+            .time{
+                color: #333;
+                font-size: 18px;
+                margin-bottom: 10px;
+                strong{
+                    margin: 0 8px;
+                }
+            }
+            .tips{
+                font-size: 14px;
+                color: @redColor;
+            }
+        }
+    }
+    // 订单
+    .order-list{
+        .order-tips{
+            font-size: 12px;
+            margin-bottom: 8px;
+            img{
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                margin-right: 6px;
+                vertical-align: middle;
+            }
+            span{
+                color: rgb(248, 164, 7);
+            }
+        }
+        .cinemas-field{
+            border: 1px solid #E5E5E5;
+            margin-top: 0;
+            .filed-time{
+                color: @redColor;
+            }
+            .seat{
+                position: relative;
+            }
+            .have-chioce-set{
+                display: inline-block;
+                width: 60px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 12px;
+                text-align: center;
+                margin: 0 3px 3px;
+                background: url('../images/order/seat.png') no-repeat;
+                color: #EF4238;
+                position: relative;
+            }
+            .hall{
+                font-size: 14px;
+                font-weight: bold;
+                position: absolute;
+                top: 10px;
+                left: 0;
+            }
+        }
+    }
+    // 表单
+    .my-form{
+        text-align: center;
+        margin-top: 60px;
+        p{
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 14px;
+            span{
+                color: @redColor;
+            }
+            
+        }
+        .sure-pay-btn{
+            width: 160px;
+            height: 45px;
+            line-height: 45px;
+            background: @redColor;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+    }
+    
+}
+.red-bold{
+    color: @redColor;
+    font-size: 22px;
+    font-weight: normal;
+}

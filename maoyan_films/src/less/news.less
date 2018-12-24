@@ -1,0 +1,238 @@
+// 引入第三方插件样式
+@import '../plugin/jquery.pagination.css';
+@fontColorRed: #EF4238;
+@fontColorLightGrey: #999;
+@fontColorDarkGrey: #333;
+
+main{
+    margin-bottom: 80px;
+}
+// tab内容公共样式
+.browsing-num{
+    background: url('../images/common/eye.png') no-repeat;
+    background-position: left;
+    padding-left: 25px;
+}
+.other-infos{
+    color: @fontColorLightGrey;
+    font-size: 12px;
+    margin-top: 5px;   
+}
+.film,.wonderful-atlas .name{
+    background: #B9C1DB;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-right: 20px;
+
+    &:hover{
+     color: @fontColorRed;
+    }
+}
+
+// tab内容
+.content-item{
+    display: none;
+    
+    // 热点首页
+    .hotspot{
+        width: 730px;
+
+
+        h1{
+            width: 100%;
+            color: @fontColorRed;
+            font-size: 28px;
+            font-weight: normal;
+            padding: 45px 0 25px 0;
+
+            a{
+                font-size: 14px;
+                color: @fontColorRed;
+                margin-top: 15px;
+
+                i{
+                    font-weight: bold;
+                }
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .news-lis{
+            width: 100%;
+            font-size: 14px;
+
+            li{
+                float: left;
+                width: 30%;
+                margin-bottom: 20px;
+
+                img{
+                    width: 100%;
+                }
+
+                .title{
+                    color: @fontColorDarkGrey;
+                    margin-top: 15px;
+                    line-height: 20px;
+                }
+
+                .other-infos{
+                    margin-top: 5px;   
+                }
+            }
+
+            li:not(:nth-child(3n)){
+                margin-right: 5%;
+            }
+        }
+    }
+
+    // 新闻资讯
+    .news-information{
+        margin-top: 60px;
+
+        .news-information-lis{
+            width: 100%;
+
+            .news-information-item{
+                width: 100%;
+                padding: 20px 0;
+
+                img{
+                    width: 15%;
+                    margin-right: 2%;
+                }
+
+                .infos{
+                    width: 83%;
+
+                    .title{
+                        color: @fontColorDarkGrey;
+                    }
+
+                    .des,.other-infos{
+                        color: @fontColorLightGrey;
+                        // font-size: 14px;
+                        margin: 20px 0;
+                    }
+
+                }
+            }
+        }
+    }
+
+    // 预告片
+    .prevue{
+        margin-top: 60px;
+        .prevue-list{
+            width: 100%;
+
+            li{
+                width: 20%;
+                float: left;
+                box-sizing: border-box;
+                height: 200px;
+                margin-bottom: 20px;
+
+                .play-box{
+                    display: block;
+                    width: 100%;
+                    position: relative;
+
+                    img{
+                        width: 100%;
+                    }
+
+                    .play-icon{
+                        width: 100%;
+                        height: 100%;
+                        background: url(../images/common/play-icon.png) no-repeat;
+                        background-position: center center;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                .title{
+                    display: block;
+                    font-size: 14px;
+                    color: @fontColorDarkGrey;
+                    padding: 15px 0;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+
+                    &:hover{
+                        color: @fontColorRed;
+                    }
+                }
+
+                .num{
+                    font-size: 12px;
+                    color: @fontColorLightGrey;
+                    position: relative;
+                    padding-left: 15px;
+
+                    &::before{
+                        content: "";
+                        display: block;
+                        height: 0;
+                        width: 0;
+                        border-width: 5px;
+                        border-style: solid;
+                        border-color: transparent transparent transparent @fontColorLightGrey;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            li:not(:nth-child(5n)){
+                margin-right: 20px;
+            }
+        }
+    }
+
+    // 精彩图集
+    .wonderful-atlas{
+        margin-top: 60px;
+        .atlas-list{
+            
+            .atlas-item{
+                padding: 30px 0 40px 0;
+                border-bottom: 1px solid #E5E5E5;
+                
+                .title{
+                    font-size: 18px; 
+                    color: @fontColorDarkGrey;
+                }
+                .atlas-box{
+                    margin: 20px 0;
+                    li{
+                        width: 20%;
+                        float: left;
+                        box-sizing: border-box;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    li:not(:last-child){
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content-item.show{
+    display: block;
+}

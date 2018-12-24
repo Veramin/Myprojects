@@ -1,0 +1,684 @@
+@import "../../node_modules/swiper/dist/css/swiper.min.css";
+@import '//at.alicdn.com/t/font_932339_xrfegcovap.css';
+main {
+    .swiper-container {
+        width: calc(100% - 50px);
+        height: 440px;
+        text-align: center;
+        margin-top: 80px;
+        position: relative;
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+        .swiper-pagination {
+            position: absolute;
+            bottom: 20px;
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+            }
+            .swiper-pagination-bullet-active {
+                width: 10px;
+                height: 10px;
+                background-color: rgb(240, 75, 10);
+            }
+        }
+        .swiper-button-prev, .swiper-button-next {
+            display: none;
+            position: absolute;
+            top: calc(50% - 35px);
+            width: 48px;
+            height: 68px;
+            outline: none;
+            background-color: rgba(252, 247, 247, 0.2);
+            border: 1px solid rgba(252, 247, 247, 0.2);
+        }
+    }
+    .swiper-container:hover .swiper-button-prev {
+        display: block;
+    }
+    .swiper-container:hover .swiper-button-next {
+        display: block;
+    }
+    .container {
+        height: 2000px;
+        margin-top: 80px;
+        .left {
+            width: 65%;
+            height: 100%;
+            background-color: #fff;
+            margin-right: calc(1200px - 95%);
+            .hotPlaying {
+                .hotPlaying-box {
+                    width: calc(100% - 3px);
+                    height: 100%;
+                    margin-left: 3px;
+                    section {
+                        width: 160px;
+                        height: 255px;
+                        border: 1px solid #d2d2d2;
+                        margin-right: 43px;
+                        margin-bottom: 35px;
+                        a {
+                            display: inline-block;
+                            position: relative;
+                            color: #333;
+                            width: 160px;
+                            height: 220px;
+                            img {
+                                width: 160px;
+                                height: 220px;
+                            }
+                            .film-name {
+                                color: #fff;
+                                font-size: 16px;
+                                line-height: 22px;
+                                margin: 0 10px;
+                                width: 120px;
+                                position: absolute;
+                                bottom: 5px;
+                            }
+                            .film-score {
+                                color: #ffb400;
+                                position: absolute;
+                                bottom: 5px;
+                                left: 128px;
+                                font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+                                font-style: italic;
+                            }
+                            .view-type {
+                                display: inline-block;
+                                width: 80px;
+                                height: 30px;
+                                color: #fff;
+                                border-radius: 3px;
+                                background-color: rgb(0,132,255);    // 后期注销
+                                position: absolute;
+                                top: 3px;
+                                left: -3px;
+                                font-weight: bolder;
+                                font-style:italic;
+                                padding-left: 5px;
+                            }
+                            .box-shadow {
+                                display: inline-block;
+                                width: 160px;
+                                height: 30px;
+                                background: url("../images/common/box-shadow.png") repeat-x;
+                                position: absolute;
+                                bottom: 0px;
+                                left: 0px;
+                            }
+                            .mask {
+                                width: 160px;
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                opacity: 0px;
+                                transition: all .25s linear;
+                                .mask-box {
+                                    width: 100%;
+                                    height: 220px;
+                                    color: #fff;
+                                    background-color: rgb(3, 0, 0);
+                                    div {
+                                        width: 100%;
+                                        height: 60%;
+                                        text-align: center;
+                                        line-height: 155px;
+                                        i {
+                                            font-size: 32px;
+                                            margin: 10px;
+                                        }
+                                    }
+                                    span {
+                                        display: inline-block;
+                                        width: 100%;
+                                        height: 35%;
+                                        font-size: 16px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                        a:hover .mask {
+                            opacity: 0.7;
+                        }
+                        .buy-ticket {
+                            a {
+                                width: 160px;
+                                height: 35px;
+                                line-height: 35px;
+                                color: red;
+                                text-align: center;
+                                background-color: #fff;
+                            }
+                            a:hover {
+                                color: #fff;
+                                background-color: red;
+                            }
+                        }
+                    }
+                    section:hover {
+                        box-shadow: 0 0 8px #fff, 0 5px 13px rgba(0,0,0,.07);
+                    }
+                    section:nth-child(4n) {
+                        margin-right: 0px;
+                    }
+                }
+            }
+            .upcoming {
+                .title {
+                    color: #0084ff;
+                    a {
+                    color: #0084ff;
+                    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOBAMAAADgeEClAAAAIVBMVEUAAAAtmPMtmPMtmPMtmPMtmPMtmPMtmPMtmPMtmPMtmPPl0NUbAAAACnRSTlMA0xXXGc0XycEaTXrFtQAAADhJREFUCNdjKHRgYGCIMgESiouBTCYpMzAzAc5cCiQmL2dgYLESYmBwXqgAYSQDGQxRQAZDK5ABAF2ICeUU3lp8AAAAAElFTkSuQmCC") right center no-repeat;;
+                    }
+                }
+                .upcoming-box {
+                    width: calc(100% - 3px);
+                    height: 100%;
+                    margin-left: 3px;
+                    .upcoming-container {
+                        width: 160px;
+                        height: 340px;
+                        margin-right: 43px;
+                        margin-bottom: 35px;
+                        position: relative;
+                        section {
+                            width: 160px;
+                            height: 295px;
+                            border: 1px solid #d2d2d2;
+                            a.infor-link {
+                                display: inline-block;
+                                position: relative;
+                                color: #d2d2d2;
+                                width: 160px;
+                                height: 220px;
+                                img {
+                                    width: 160px;
+                                    height: 220px;
+                                }
+                                
+                                .film-name {
+                                    color: #fff;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    margin: 0 10px;
+                                    width: 120px;
+                                    position: absolute;
+                                    bottom: 5px;
+                                }
+                                .view-type {
+                                    display: inline-block;
+                                    width: 80px;
+                                    height: 30px;
+                                    color: #fff;
+                                    line-height: 30px;
+                                    border-radius: 3px;
+                                    background-color: #0084ff;
+                                    position: absolute;
+                                    top: 3px;
+                                    left: -3px;
+                                    font-weight: bolder;
+                                    font-style: italic;
+                                    padding-left: 5px;
+                                }
+                                .box-shadow {
+                                    display: inline-block;
+                                    width: 160px;
+                                    height: 30px;
+                                    background: url("../images/common/box-shadow.png") repeat-x;
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                }
+                                .mask {
+                                    width: 160px;
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 0px;
+                                    opacity: 0px;
+                                    transition: all .25s linear;
+                                    .mask-box {
+                                        width: 100%;
+                                        height: 220px;
+                                        color: #fff;
+                                        background-color: rgb(3, 0, 0);
+                                        div {
+                                            width: 100%;
+                                            height: 60%;
+                                            text-align: center;
+                                            line-height: 155px;
+                                            i {
+                                                font-size: 32px;
+                                                margin: 10px;
+                                            }
+                                        }
+                                        span {
+                                            display: inline-block;
+                                            width: 100%;
+                                            height: 35%;
+                                            font-size: 16px;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                            a.infor-link:hover .mask {
+                                opacity: 0.7;
+                            }
+                            .want-to-see {
+                                font-size: 14px;
+                                color: #ffb400;
+                                background-color: #fbfbfb;
+                                text-align: left;
+                                padding-left: 10px;
+                                line-height: 35px;
+                            }
+                            .other {
+                                width: 160px;
+                                height: 39px;
+                                .video-introduce, .pre-sale {
+                                    display: inline-block;
+                                    width: 48%;
+                                    height: 39px;
+                                    color: #ccc;
+                                    line-height: 39px;
+                                    text-align: center;
+                                    .pre-sale-link {
+                                        color: #0084ff;
+                                    }
+                                }
+                                .video-introduce {
+                                    border-right: 1px dotted #d2d2d2;
+                                }
+                            }
+                            .pre-sale:hover {
+                                display: inline-block;
+                                background-color: #0084ff;
+                            }
+                            .pre-sale:hover .pre-sale-link {
+                                color: #fff;
+                            } 
+                        }
+                        section:hover {
+                            box-shadow: 0 0 8px #fff, 0 5px 13px rgba(0,0,0,.07);
+                        }
+                        p.upcoming-date {
+                            width: 100%;
+                            height: 33px;
+                            position: absolute;
+                            bottom:10px;
+                            color: #ccc;
+                            text-align: center;
+                            line-height: 44px;
+                        }
+                    }
+                    .upcoming-container:nth-child(4n) {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+        .right {
+            width: 30%;
+            height: 2000px;
+            .todayTicket{
+                width: 100%;
+                height: 700px;
+                .title {
+                    width: 100%;
+                    height: 60px;
+                    color: red;
+                    line-height: 60px;
+                    p {
+                        font-size: 28px;
+                    }
+                }
+                .slider-content {
+                    overflow: hidden;
+                    width: 100%;
+                    ul {
+                        .rank-item-top {
+                            width: 100%;
+                            height: 100%;
+                            a {
+                                width: 100%;
+                                display: inline-block;
+                                position: relative;
+                                background-color: #fff;
+                                color: #333;
+                                img {
+                                    width: 120px;
+                                    height: 78px;
+                                }
+                                .champion-logo {
+                                    width: 22px;
+                                    height: 25px;
+                                    background: url("../images/common/champion.png") center center no-repeat;
+                                    background-size: contain;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;  
+                                }
+                                .infor {
+                                    height: 78px;
+                                    margin-left: 130px;
+                                    .name {
+                                        height: 50%;
+                                        font-size: 18px;
+                                    }
+                                    .count {
+                                        height: 50%;
+                                        color: red;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        .rank-item {
+                            width: 100%;
+                            height: 100%;
+                            a {
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%; 
+                                position: relative;
+                                .narmal-link {
+                                    height: 35px;
+                                        line-height: 35px;
+                                    .best {
+                                        width: 20px;
+                                        color: red;
+                                        display: inline-block;
+                                        
+                                    }
+                                    .normal-color {
+                                        color: #333;
+                                    }
+                                    .name {
+                                        margin-left: 3px;
+                                        color: #333;
+                                        display: inline-block;
+                                        max-width: 190px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        font-size: 16px;
+                                        color: #333;
+                                        vertical-align: top;
+                                    }
+                                }
+                                .normal-count {
+                                    color: red;
+                                    position: absolute;
+                                    top: 0px;
+                                    right: 3px;
+                                }  
+                            }
+                        }
+                        .rank-item:hover {
+                            cursor: pointer;
+                            background-color: #f7f7f7;
+                        }
+                    }
+                    .totoal-tickets {
+                        margin-top: 49px;
+                        background-color: #fdfdfd;
+                        border: 1px solid #efefef;
+                        h3 {
+                            float: left;
+                            width: 20px;
+                            height: 83px;
+                            padding: 10px;
+                            color: #fff;
+                            background-color: #ef4238;
+                            text-align: center;
+                            font-weight: 400;
+                            font-size: 17px;
+                            line-height: 21px;
+                        }
+                        div.total-right {
+                            height: 105px;
+                            font-size: 14px;
+                            color: #ef4238;
+                            padding: 0px 15px 0px 60px;
+                            position: relative;
+                            .top {
+                                width: 100%;
+                                height: 60%;
+                                background-color: #fff;
+                                
+                                .num {
+                                    font-size: 30px;
+                                    width: 50%;
+                                    font-weight: 700;
+                                    padding-top: 22px;
+                                }
+                                .findMore {
+                                    display: inline-block;
+                                    color: red;
+                                    width: 67px;
+                                    height: 80%;
+                                    padding-top: 30px;
+                                    margin-left: 70px;
+                                    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOBAMAAADgeEClAAAAIVBMVEUAAADvQjjvQjjvQjjvQjjvQjjvQjjvQjjvQjjvQjjvQjiWrWKOAAAACnRSTlMA09cZFc0XycEanhmhUgAAADhJREFUCNdjKDRgYGCIUgYSjouATBYpOJNNSg3ITFwKJCYtZ2Bg1hJhYDBa6ABnALUBGQytCQwMAFe+CgbfyLZDAAAAAElFTkSuQmCC') 100% no-repeat;
+                                }
+                                .findMore:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                            .bottom {
+                                width: 100%;
+                                height: 40%;
+                                background-color: #fff;
+                                .BJTime, .ticketNum {
+                                    display: inline-block;
+                                    font-size: 14px;
+                                    color: #c4c4c4;
+
+                                }
+                                .BJTime {
+                                    margin-right: 11px;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+            .top100, .mostHope {
+                width: 100%;
+                height: 800px;
+                .title {
+                    width: 100%;
+                    height: 60px;
+                    color: #ffb400;
+                    line-height: 60px;
+                    p {
+                        font-size: 28px;
+                    }
+                    a {
+                        display: inline-block;
+                        width: 105px;
+                        height: 100%;
+                        color: #ffb400;
+                        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOBAMAAADgeEClAAAAIVBMVEUAAAD/tAD/tAD/tAD/tAD/tAD/tAD/tAD/tAD/tAD/tAAY2wYRAAAACnRSTlMA1xXTGc0XycEa5NmwqgAAADlJREFUCNdjKHZgYGCIEgESyguBTCYrMTAzAcZUXAokJi5nYGCRMmJgcFysAGEkAhkMUUAGQyuQAQBW8gnlUiyMNgAAAABJRU5ErkJggg==') 100% no-repeat;
+                    }
+                }
+                .slider-content {
+                    overflow: hidden;
+                    width: 100%;
+                    ul {
+                        .rank-item-top {
+                            width: 100%;
+                            height: 100%;
+                            a {
+                                width: 100%;
+                                display: inline-block;
+                                position: relative;
+                                background-color: #fff;
+                                color: #333;
+                                img {
+                                    width: 120px;
+                                    height: 78px;
+                                }
+                                .champion-logo {
+                                    width: 22px;
+                                    height: 25px;
+                                    background: url("../images/common/champion.png") center center no-repeat;
+                                    background-size: contain;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;  
+                                }
+                                .hope-logo {
+                                    width: 22px;
+                                    height: 25px;
+                                    background: url("../images/common/hope-logo.png") center center no-repeat;
+                                    background-size: contain;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;  
+                                }
+
+                                .infor {
+                                    height: 78px;
+                                    margin-left: 130px;
+                                    .name {
+                                        height: 50%;
+                                        font-size: 18px;
+                                    }
+                                    .count {
+                                        height: 50%;
+                                        color: #ffb400;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        .rank-item {
+                            width: 100%;
+                            height: 100%;
+                            a {
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%; 
+                                position: relative;
+                                .narmal-link {
+                                    height: 35px;
+                                        line-height: 35px;
+                                    .best {
+                                        width: 20px;
+                                        color: #ffb400;
+                                        display: inline-block;
+                                        
+                                    }
+                                    .normal-color {
+                                        width: 20px;
+                                        color: #333;
+                                        display: inline-block;
+                                    }
+                                    .name {
+                                        margin-left: 3px;
+                                        color: #333;
+                                        display: inline-block;
+                                        max-width: 190px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        font-size: 16px;
+                                        color: #333;
+                                        vertical-align: top;
+                                    }
+                                }
+                                .normal-count {
+                                    position: absolute;
+                                    color: #ffb400;
+                                    top: 0px;
+                                    right: 3px;
+                                }  
+                            }
+                        }
+                        .rank-item:hover {
+                            cursor: pointer;
+                            background-color: #f7f7f7;
+                        }
+                    }
+                    .totoal-tickets {
+                        margin-top: 49px;
+                        background-color: #fdfdfd;
+                        border: 1px solid #efefef;
+                        h3 {
+                            float: left;
+                            width: 20px;
+                            height: 83px;
+                            padding: 10px;
+                            color: #fff;
+                            background-color: #ef4238;
+                            text-align: center;
+                            font-weight: 400;
+                            font-size: 17px;
+                            line-height: 21px;
+                        }
+                        div.total-right {
+                            height: 105px;
+                            font-size: 14px;
+                            color: #ef4238;
+                            padding: 0px 15px 0px 60px;
+                            position: relative;
+                            .top {
+                                width: 100%;
+                                height: 60%;
+                                background-color: #fff;
+                                
+                                .num {
+                                    font-size: 30px;
+                                    width: 50%;
+                                    font-weight: 700;
+                                    padding-top: 22px;
+                                }
+                                .findMore {
+                                    display: inline-block;
+                                    color: red;
+                                    width: 67px;
+                                    height: 80%;
+                                    padding-top: 30px;
+                                    margin-left: 70px;
+                                    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOBAMAAADgeEClAAAAIVBMVEUAAADvQjjvQjjvQjjvQjjvQjjvQjjvQjjvQjjvQjjvQjiWrWKOAAAACnRSTlMA09cZFc0XycEanhmhUgAAADhJREFUCNdjKDRgYGCIUgYSjouATBYpOJNNSg3ITFwKJCYtZ2Bg1hJhYDBa6ABnALUBGQytCQwMAFe+CgbfyLZDAAAAAElFTkSuQmCC') 100% no-repeat;
+                                }
+                                .findMore:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                            .bottom {
+                                width: 100%;
+                                height: 40%;
+                                background-color: #fff;
+                                .BJTime, .ticketNum {
+                                    display: inline-block;
+                                    font-size: 14px;
+                                    color: #c4c4c4;
+                                }
+                                .BJTime {
+                                    margin-right: 7px;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+            .top100 {
+                height: 500px;
+            }
+
+
+        }
+    }
+
+}
+
+

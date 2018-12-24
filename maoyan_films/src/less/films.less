@@ -1,0 +1,151 @@
+main {
+    height: 1730px;
+    .tab-menu {
+        margin-top: 80px;
+    }
+    .tab-content {
+        height: 100%;
+        margin-top: 35px;
+        .search-box {
+            width: calc(100% - 30px);
+            height: 300px;
+            margin: 0px 15px;
+            background-color: #fff;
+            border: 1px solid #d2d2d2;
+            .film-type, .film-area, .film-era {
+                width: 100%;
+                height: 100px;
+                line-height: 45px;
+                border-bottom: 1px dotted #d2d2d2;
+                span {
+                    color: #d2d2d2;
+                }
+                .type-list, .area-list, .era-list {
+                    width: 1120px;
+                    height: 100%;
+                    margin-left: 45px;
+                    .list-li {
+                        display: inline-block;
+                        color: #333;
+                        line-height: 30px;
+                        padding: 0px 10px;
+                        margin: 0px 2px;
+                        border-radius: 14px;
+                        cursor: pointer;
+                    }
+                    .list-li:hover {
+                        color: red;
+                    }
+                    .active {
+                        color: #fff;
+                        background-color: rgb(230, 79, 59);
+                    }
+                    .active:hover {
+                        color: #fff;
+                    }
+
+                }
+            }
+        }
+        .content-item {
+            margin-top: 45px;
+            .content-item-title {
+                width: 130px;
+                background-color: #fff;
+                .sort-radio {
+                    display: inline-block;
+                    width: 18px;
+                    height: 16px;
+                    background-color: lightblue;
+                    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0ODZiM2E2Zi0wMmNhLTQ4NzEtOTllMy03OWIyZjBlM2UxZjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTY1MkY4NUMzMDk0MTFFNjgyOEJEMzk3NTFDMkJERTEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTVCMUEzMzYzMDhGMTFFNjgyOEJEMzk3NTFDMkJERTEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpjZTdiOTRkYS1mYWYwLTQ2ZTAtOTc4OS00ZTNhMDViMmEyYzciIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpjYTY1NDI2OC03N2ZiLTExNzktYmMwOC1jMTU0YzQwYWY4NzMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6AcvLHAAABg0lEQVR42pSTzUrDQBCAZzfpn+ihj2BBEBX06LlYSKkH8eATVKroxRfRg4otFl/BgxQrFp/BQvFY9AlqEayNZteZZRKyaSk68JFlMv87KwbFTUjIClJFysgi6/pIG2kiL3FjEQuQRk6RQ0TCdFHINXKCjEjhxpxbyBbMFgpcQ5a4Qj/MdPYH57gUuVrTwip+u4gD/5MAWXd5YJazclKQOziGTMmjHDB+vIdR/QJk8B03I58qBfAsZw2QrR1Bbncv0tFZjb/Ab15hOEs8mkHBrktDtlSeqDdX2YEfrZPqwsR1BWikpzSs+V9CzC30k9rhQ2siwPvd7bRBvrm8YcvRZISAYf3cbEzeqxjdoN2Cj5sGzAuRDNCha1zDw3N4EzREXyv4DBSMlTJWGSlhzpHmK+xr3KAWekgjWjW0SAsJC64D+ZRroDPpEvnJpxcOkXa7Ew+SwnKzmJGgs7S9n9gnejQ+Qg1f8oOBGY+JMm+zj/UaQ6HV3ucFK7DhK1fY5JYj+RVgAJTVZv0N5fOpAAAAAElFTkSuQmCC') no-repeat;
+                }
+                .sort-type {
+                    font-size: 14px;
+                    color: #333;
+                }
+            }
+            .film-content {
+                width: calc(100% - 3px);
+                // height: 100%;
+                margin-left: 3px;
+                margin-top: 5px;
+                // background-color: pink;
+                section {
+                    width: 160px;
+                    height: 275px;
+                    margin-right: 47px;
+                    margin-bottom: 35px;
+                    a {
+                        display: inline-block;
+                        position: relative;
+                        color: #333;
+                        width: 160px;
+                        height: 220px;
+                        img {
+                            width: 160px;
+                            height: 220px;
+                        }
+                        .sale {
+                            font-size: 10px;
+                            color: #fff;
+                            width: 30px;
+                            text-align: center;
+                            border-radius: 3px;
+                            background-color: red;
+                            position: absolute;
+                            bottom: 5px;
+                            left: 125px;
+
+                        }
+                        .view-type {
+                            display: inline-block;
+                            width: 80px;
+                            height: 30px;
+                            color: #fff;
+                            line-height: 30px;
+                            border-radius: 3px;
+                            background-color: rgb(0,132,255);    // 后期注销
+                            position: absolute;
+                            top: 3px;
+                            left: -3px;
+                            font-weight: bolder;
+                            font-style:italic;
+                            padding-left: 5px;
+                        }
+                    }
+                    .film-name {
+                        color: #333;
+                        width: 100%;
+                        height: 22px;
+                        text-align: center;
+                        cursor: pointer;
+                        padding: 5px 0px;
+
+                    }
+                    .film-score {
+                        display: inline-block;
+                        color: #ffb400;
+                        width: 100%;
+                        height: 22px;
+                        text-align: center;
+                    }
+                    .want-to-see {
+                        font-size: 14px;
+                        color: #ffb400;
+                        width: 100%;
+                        text-align: center;
+                        text-align: left;
+                        padding-left: 10px;
+                        line-height: 35px;
+                    }
+                }
+                section img:hover {
+                    box-shadow: 0 0 8px #fff, 0 5px 13px rgba(0,0,0,.07);
+                }
+                section:nth-child(6n) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
