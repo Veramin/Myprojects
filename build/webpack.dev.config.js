@@ -19,7 +19,7 @@ module.exports = {
         path: path.resolve(__dirname,'../dist/'),
         // 文件名
         filename:'static/js/[name]-bundle.js',
-        publicPath: "http://localhost:8081/"
+        // publicPath: "http://localhost:8081/"
     },
     // 加载器
     module:{rules: Loader.config},

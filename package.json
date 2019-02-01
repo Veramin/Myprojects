@@ -7,12 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/webpack  --config ./build/webpack.dev.config.js",
     "dev": "webpack-dev-server --config ./build/webpack.dev.config.js",
-    "preinstall": "node tools/yarn/check-yarn.js"
+    "preinstall": "node tools/yarn/check-yarn.js",
+    "push": "npx angular-cli-ghpages "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular-cli-ghpages": "^0.5.3",
     "hydrogen-js-sdk": "^1.6.5",
     "jquery": "^3.3.1",
     "swiper": "^4.4.2"
