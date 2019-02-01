@@ -11,12 +11,11 @@
 /******/
 /******/ 	// eslint-disable-next-line no-unused-vars
 /******/ 	function hotDownloadUpdateChunk(chunkId) {
-/******/ 		var head = document.getElementsByTagName("head")[0];
 /******/ 		var script = document.createElement("script");
 /******/ 		script.charset = "utf-8";
 /******/ 		script.src = __webpack_require__.p + "" + chunkId + "." + hotCurrentHash + ".hot-update.js";
 /******/ 		if (null) script.crossOrigin = null;
-/******/ 		head.appendChild(script);
+/******/ 		document.head.appendChild(script);
 /******/ 	}
 /******/
 /******/ 	// eslint-disable-next-line no-unused-vars
@@ -64,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "582de858f998374ce279";
+/******/ 	var hotCurrentHash = "0af8b8f025024355819e";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -782,7 +781,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "http://localhost:8081/";
+/******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
